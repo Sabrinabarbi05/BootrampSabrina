@@ -1,41 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>bootstrap</title>
-    
-  </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>bootstrap</title>
+
+</head>
+
+<body>
+  <!--header-->
+  <header>
+    <!--nav-->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <!--end logo-->
+
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-camera-video-off-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M10.961 12.365a2 2 0 0 0 .522-1.103l3.11 1.382A1 1 0 0 0 16 11.731V4.269a1 1 0 0 0-1.406-.913l-3.111 1.382A2 2 0 0 0 9.5 3H4.272zm-10.114-9A2 2 0 0 0 0 5v6a2 2 0 0 0 2 2h5.728zm9.746 11.925-10-14 .814-.58 10 14z" />
+          </svg>
+
+          <strong class="ms-2">
+            Album
+          </strong>
+
+        </a>
+        </strong>
+        <!--end logo-->
+        <!--button responsive-->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--end button responsive-->
+
+        <!--Links-->
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Portifolio</a>
+                <a class="nav-link " aria-current="page" href="#">Portifolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
+                <a class="nav-link " aria-current="page" href="#">Contato</a>
               </li>
             </ul>
-            
+
           </div>
         </div>
-      </nav>
+        <!--end link-->
 
-    <script src="assets/js/dundle.min.js " crossorigin="anonymous"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
-    <script src="assets/js/popper.min.js " integrity= crossorigin="anonymous"></script>
+      </div>
+    </nav>
+  </header>
+  <!--banner rotativo-->
+  <section id="banner-rotativo" class="carousel carousel-dark slide">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#banner-rotativok" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#banner-rotativo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#banner-rotativo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!--Container banner-->
+    <article class="carousel-inner">
+
+      <!--imagens do banner-->
+      <figure class="carousel-item active" data-bs-interval="10000">
+        <img src="https://fakeimg.pl/500x200/" class="d-block w-100" alt="banner 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </figure>
+
+      <figure class="carousel-item" data-bs-interval="2000">
+        <img src="https://fakeimg.pl/500x200/" class="d-block w-100" alt="banner 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </figure>
+
+      <figure class="carousel-item">
+        <img src="https://fakeimg.pl/500x200/" class="d-block w-100" alt="banner 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </figure>
+      <!--End imanes do banner-->
+    </article>
+
+    <!--end container banner-->
+
+    <!--Botoes de açao-->
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#banner-rotativo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#banner-rotativo" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <!--end botoes de açao-->
+
+  </section>
+  <main class="row  justify-content-around">
+
+    <div class="card" style="width: 18rem;">
+      <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="container-fluid text-white bg-dark">
+    <div class="row">
+      <section class="col">
+        <h5>Albuns</h5>
+        <ul>
+          <li>
+            <a href="#">Baby</a>
+          </li>
+          <li>
+            <a href="#">Modelo</a>
+          </li>
+          <li>
+            <a href="#">family</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+
+
+
+  <script src="assets/js/dundle.min.js " crossorigin="anonymous"></script>
+  <script src="assets/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="assets/js/popper.min.js " integrity=crossorigin="anonymous"></script>
 
 </body>
 
