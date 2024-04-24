@@ -1,79 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <title>bootstrap</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portifolio</title>
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
   <!--header-->
   <header>
-    <!--nav-->
+    <!--Nav-->
     <nav class="navbar navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <!--end logo-->
+        <!--Logo-->
 
         <a class="navbar-brand d-flex align-items-center" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            class="bi bi-camera-video-off-fill" viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M10.961 12.365a2 2 0 0 0 .522-1.103l3.11 1.382A1 1 0 0 0 16 11.731V4.269a1 1 0 0 0-1.406-.913l-3.111 1.382A2 2 0 0 0 9.5 3H4.272zm-10.114-9A2 2 0 0 0 0 5v6a2 2 0 0 0 2 2h5.728zm9.746 11.925-10-14 .814-.58 10 14z" />
+            class="bi bi-camera-reels-fill" viewBox="0 0 16 16">
+            <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+            <path d="M9 6a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+            <path
+              d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" />
           </svg>
 
           <strong class="ms-2">
-            Album
+            Álbum
           </strong>
-
         </a>
-        </strong>
-        <!--end logo-->
-        <!--button responsive-->
 
+        <!--End Logo-->
+        <!--button responsive-->
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
           aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!--end button responsive-->
+        <!--End button responsive-->
 
-        <!--Links-->
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        <!--Link-->
+        <section class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
           aria-labelledby="offcanvasDarkNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
               aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
+
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Portifolio</a>
+                <a class="nav-link" href="#">Portifolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Contato</a>
+                <a class="nav-link" href="#">Contatos</a>
               </li>
             </ul>
 
           </div>
-        </div>
-        <!--end link-->
-
+        </section>
+        <!--End link-->
       </div>
     </nav>
+    <!-- End Nav-->
   </header>
-  <!--banner rotativo-->
+  <!--Banner Rotativo-->
   <section id="banner-rotativo" class="carousel carousel-dark slide">
-
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#banner-rotativok" data-bs-slide-to="0" class="active" aria-current="true"
+      <button type="button" data-bs-target="#banner-rotativo" data-bs-slide-to="0" class="active" aria-current="true"
         aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#banner-rotativo" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#banner-rotativo" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -82,9 +79,9 @@
     <!--Container banner-->
     <article class="carousel-inner">
 
-      <!--imagens do banner-->
+      <!--Imagens do banner-->
       <figure class="carousel-item active" data-bs-interval="10000">
-        <img src="https://fakeimg.pl/500x200/" class="d-block w-100" alt="banner 1">
+        <img src="https://fakeimg.pl/500x200/" class="d-block w-100" alt="Banner 1">
         <div class="carousel-caption d-none d-md-block">
           <h5>First slide label</h5>
           <p>Some representative placeholder content for the first slide.</p>
@@ -92,7 +89,7 @@
       </figure>
 
       <figure class="carousel-item" data-bs-interval="2000">
-        <img src="https://fakeimg.pl/500x200/" class="d-block w-100" alt="banner 2">
+        <img src="https://fakeimg.pl/500x200/" class="d-block w-100" alt="Banner 2">
         <div class="carousel-caption d-none d-md-block">
           <h5>Second slide label</h5>
           <p>Some representative placeholder content for the second slide.</p>
@@ -100,20 +97,18 @@
       </figure>
 
       <figure class="carousel-item">
-        <img src="https://fakeimg.pl/500x200/" class="d-block w-100" alt="banner 3">
+        <img src="https://fakeimg.pl/500x200/" class="d-block w-100" alt="Banner 3">
         <div class="carousel-caption d-none d-md-block">
           <h5>Third slide label</h5>
           <p>Some representative placeholder content for the third slide.</p>
         </div>
       </figure>
-      <!--End imanes do banner-->
+      <!--End Imagens do banner-->
+
     </article>
+    <!--End Container banner-->
 
-    <!--end container banner-->
-
-    <!--Botoes de açao-->
-
-
+    <!--Botoes de ação-->
     <button class="carousel-control-prev" type="button" data-bs-target="#banner-rotativo" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
@@ -122,10 +117,11 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-    <!--end botoes de açao-->
+    <!--End Botoes de ação-->
 
   </section>
-  <main class="row  justify-content-around">
+
+  <main class="row justify-content-around">
 
     <div class="card" style="width: 18rem;">
       <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
@@ -146,6 +142,7 @@
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
+
     <div class="card" style="width: 18rem;">
       <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
       <div class="card-body">
@@ -159,30 +156,42 @@
   </main>
 
   <footer class="container-fluid text-white bg-dark">
-    <div class="row">
-      <section class="col">
+    <div class="row pt-5 pb-5">
+      <section class="col-md-4 mb-5">
         <h5>Albuns</h5>
-        <ul>
-          <li>
-            <a href="#">Baby</a>
+        <ul class="nav flex-column">
+          <li class="nav-item"> 
+            <a href="#" class="nav-link">Baby</a>
           </li>
-          <li>
-            <a href="#">Modelo</a>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Models</a>
           </li>
-          <li>
-            <a href="#">family</a>
+          <li class="nav-item">
+            <a href="#" class="nav-link">family</a>
           </li>
         </ul>
       </section>
+
+      <section class="col-md-4">
+        <h5>Contato</h5>
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link" href="tel:+5513999999999">Tel:(61) 9 9999-9999</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://api.whatsapp.com/send?phone=556199999999&text=Compre%20meu%20portifolio">Whatsapp:(61) 9 9999-9999</a>
+          </li>
+        </ul>
+      </section>
+      <section class="col-md-4">
+       <a href="#">Voltar ao topo!</a>
+      </section>
+   
+    
     </div>
   </footer>
 
-
-
-  <script src="assets/js/dundle.min.js " crossorigin="anonymous"></script>
-  <script src="assets/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-  <script src="assets/js/popper.min.js " integrity=crossorigin="anonymous"></script>
-
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
